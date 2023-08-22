@@ -1,0 +1,96 @@
+h1{
+    padding-left: 12px;
+}
+
+/* Header Component CSS */
+.header {
+    background-color: #5a626f;
+    color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 12px;
+  }
+
+  
+  .search-bar {
+    /* display: flex; */
+    margin-top: 22px;
+    padding-right: 12px;
+  }
+  
+  input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    flex: 1;
+  }
+  
+  button {
+    background-color: #0f9d58;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin-left: 6px;
+  }
+  
+  /* Current Weather Component CSS*/
+  .current-weather {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 12px;
+  }
+  
+  /*Hourly Forecast CSS  */
+  .hourly-forecast {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hourly-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .hourly-item {
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Daily Forecast */
+  .daily-forecast {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 75%;
+  }
+  
+  .daily-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: column;
+  }
+  
+  .daily-item {
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+  }
+    
+
+  

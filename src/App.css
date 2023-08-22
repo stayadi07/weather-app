@@ -1,38 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background-color: #f0f0f0; */
+
+}
+
+
+.App{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Add global styling for both themes */
+
 .App {
   text-align: center;
+  margin: 0 auto;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.light {
+  background-color: #dbdce6ad;
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dark {
+  background-color: #333;
+  color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Add styling specific to each theme */
+
+.light .header  {
+  background-color: #9fa8b4;
+}
+
+.dark .header {
+  background-color: #1a1a1a;
+}
+
+/* Add styling for other components in both themes */
+
+.theme-switcher {
+  background-color:#485364;;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  position: absolute;
+  top: 98px;
+  right: 10px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
