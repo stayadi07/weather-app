@@ -3,11 +3,9 @@ body {
   margin: 0;
   padding: 0;
   /* background-color: #f0f0f0; */
-
 }
 
-
-.App{
+.App {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -19,13 +17,14 @@ body {
 
 .App {
   text-align: center;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .light {
-  background-color: #dbdce6ad;
-  color: #333;
+  background-color: azure;
+  color: #000;
 }
 
 .dark {
@@ -35,8 +34,10 @@ body {
 
 /* Add styling specific to each theme */
 
-.light .header  {
-  background-color: #9fa8b4;
+.light .header {
+  background-color: #fff;
+  /* color: darkseagreen; */
+  color: black;
 }
 
 .dark .header {
@@ -46,7 +47,7 @@ body {
 /* Add styling for other components in both themes */
 
 .theme-switcher {
-  background-color:#485364;;
+  background-color: #485364;
   border: none;
   color: inherit;
   cursor: pointer;
@@ -55,4 +56,3 @@ body {
   right: 10px;
   color: white;
 }
-
