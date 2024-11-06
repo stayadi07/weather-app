@@ -1,73 +1,42 @@
-![image](https://github.com/stayadi07/weather-app/assets/98824627/d3035ff1-c369-488c-a314-796f7755c082)
+**Weather Dashboard 🌦️**
+This Weather Dashboard is a React app that displays current, hourly, and daily weather information based on the user's geolocation or a specified city. The app features dynamic theme switching (light and dark mode), and uses the OpenWeather API for data retrieval.
 
+**Features:**
+Current Weather: Displays current weather, temperature, and conditions icon based on geolocation or searched city.
 
-# Getting Started with Create React App
+Hourly Forecast: Shows weather data and condition icons for the next few hours.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Daily Forecast: Provides weather conditions, temperature range, and icons for the next several days.
 
-## Available Scripts
+Theme Switcher: Allows toggling between light and dark themes with a button styled conditionally based on the selected theme.
 
-In the project directory, you can run:
+**Tech Stack**
+React: Core UI library.
+Material-UI (MUI): For styling and creating responsive, accessible components.
+OpenWeather API: Fetches real-time weather data, including current conditions, hourly, and daily forecasts.
 
-### `npm start`
+**Getting Started**
+Prerequisites
+Node.js: Make sure you have Node.js installed (recommended version >= 14.0).
+OpenWeather API Key: Sign up at OpenWeather to get an API key.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Components**
+App.js: The main component that holds the state for the app's theme, location, and fetched weather data. It also manages geolocation and fetches weather data based on location or city name input.
+Header: Contains a search bar for entering a city name and triggers weather data fetching. The theme is dynamically applied to the header.
+CurrentWeather: Displays the current weather details, including temperature, weather condition, and icon.
+HourlyForecast: Shows the forecast and condition icons for the upcoming hours.
+DailyForecast: Lists the daily weather forecast, including min and max temperatures, condition icons, and other weather details.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**API Integration**
+This app uses the OpenWeather API for fetching:
 
-### `npm test`
+Current Weather: https://api.openweathermap.org/data/2.5/weather
+Hourly & Daily Forecast: https://api.openweathermap.org/data/2.5/forecast
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Theme Switching**
+The theme can be toggled between light and dark modes using Material-UI's theme provider. Conditional styling is applied based on the theme to ensure a consistent user experience.
 
-### `npm run build`
+![image](https://github.com/user-attachments/assets/cc8ce89b-4f1a-40f0-b1a4-b7da03ecc7e3)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![image](https://github.com/user-attachments/assets/2f47cfa8-cc7e-4124-b7c9-53f0819a2113)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
