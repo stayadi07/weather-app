@@ -34,6 +34,7 @@ function App() {
         },
         (error) => {
           console.error(error);
+          alert("Please enable geolocation in your browser settings");
         }
       );
     }
@@ -154,12 +155,14 @@ function App() {
           cityName={cityName}
           weatherIcon={weatherIcon}
         />
+
         <HourlyForecast
           hourlyForecast={hourlyForecast}
           theme={theme}
           cityName={cityName}
           weatherIcon={weatherIcon}
         />
+
         <DailyForecast
           dailyForecast={dailyForecast}
           theme={theme}
