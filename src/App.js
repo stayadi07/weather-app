@@ -27,7 +27,6 @@ function App() {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         (position) => {
-          console.log("position", position);
           setLocation({
             lat: position.coords.latitude,
             lon: position.coords.longitude,

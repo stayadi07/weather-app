@@ -4,7 +4,6 @@ import { Avatar } from "@mui/material";
 
 function HourlyForecast({ hourlyForecast, theme, cityName }) {
   const { list } = hourlyForecast;
-  console.log("list", list);
   return (
     <div className={`hourly-forecast ${theme === "dark" ? "dark" : null}`}>
       <h2>Hourly Forecast of {cityName}</h2>

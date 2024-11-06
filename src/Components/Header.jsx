@@ -90,8 +90,7 @@ function Header({ fetchWeatherData, theme }) {
           variant="contained"
           color="primary"
           onClick={handleSearch}
-          fullWidth
-          sx={{ marginRight: "10px" }}
+          sx={{ marginRight: "10px", width: 120 }}
         >
           Search
         </Button>

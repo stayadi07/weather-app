@@ -4,7 +4,6 @@ import { Avatar } from "@mui/material";
 
 function DailyForecast({ dailyForecast, theme, cityName, weatherIcon }) {
   const { list } = dailyForecast;
-  console.log("first", list);
   return (
     <div className={`daily-forecast ${theme === "dark" ? "dark" : null}`}>
       <h2>Daily Forecast of {cityName}</h2>
