@@ -140,7 +140,7 @@ function App() {
               right: 0,
               marginRight: "12px",
               backgroundColor: theme === "light" ? "darkseagreen" : "black",
-              color: theme === "light" ? "#000" : "white",
+              color: theme === "light" ? "#fff" : "white",
               fontWeight: "500px",
             }}
           >
